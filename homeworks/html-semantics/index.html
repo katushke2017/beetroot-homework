@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semantics Elements</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div></div>
+      <h1>HTML5 Семантичні елементи</h1>
+    </header>
+    <nav>
+      <ol>
+        <li>
+          <a href="../../index.html">HOME PAGE</a>
+        </li>
+        <li>
+          <a href="#nav-main-item1"
+            >Понятття семантичних елементів та підтримка їх браузерами</a
+          >
+        </li>
+        <li>
+          <a href="#nav-main-item2">Нові семантичні елементи в HTML5</a>
+          <ul>
+            <li>
+              <a href="#nav-sumitem-2-1">&lt;section&gt; елемент </a>
+            </li>
+            <li>
+              <a href="#nav-sumitem-2-2">&lt;article&gt; елемент </a>
+            </li>
+            <li>
+              <a href="#nav-sumitem-2-3">&lt;header&gt; елемент </a>
+            </li>
+            <li>
+              <a href="#nav-sumitem-2-4">&lt;footer&gt; елемент </a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#nav-main-item3">Приклади IFRAME</a>
+
+          <ul>
+            <li>
+              <a href="#nav-sumitem-3-1"> з посиланнями на .html файл </a>
+            </li>
+            <li>
+              <a href="#nav-sumitem-3-2"> з посиланнями на відео </a>
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </nav>
+    <main>
+      <section id="nav-main-item1">
+        <header>
+          <h2>Понятття семантичних елементів та підтримка їх браузерами</h2>
+        </header>
+        <article>
+          <header>
+            <h3>Понятття</h3>
+          </header>
+          <p>
+            Семантичний елемент чітко описує його значення як для браузера, так
+            і для розробника. Приклади не семантичних елементів: &lt;div&gt; і
+            &lt;span&gt;- нічого не говорить про його вміст. Приклади
+            семантичних елементів: &lt;form&gt;, &lt;table&gt; і
+            &lt;article&gt;- чітко визначає його зміст.
+          </p>
+        </article>
+        <article>
+          <header>
+            <h3>Підтримка браузерами</h3>
+          </header>
+          <p>
+            Семантичні елементи HTML5 підтримуються у всіх сучасних браузерах.
+          </p>
+          <img src="./images/support.jpg" alt="" />
+          <p>
+            Крім того, ви можете "навчити" старих браузерів, як обробляти
+            "невідомі елементи". Прочитайте про це в
+            <a
+              href="https://w3schoolsua.github.io/html/html5_browsers.html"
+              target="_blank"
+              >підтримці браузера HTML5.</a
+            >
+          </p>
+        </article>
+      </section>
+      <section id="nav-main-item2">
+        <header>
+          <h2>Нові семантичні елементи в HTML5</h2>
+        </header>
+
+        <article id="nav-sumitem-2-1">
+          <header>
+            <h3>&lt;section&gt; елемент</h3>
+          </header>
+          <p>
+            Елемент &lt;section&gt;визначає розділ в документі. Згідно з
+            документацією в3к'с HTML5: "розділ представляє собою тематичну
+            угруповання контенту, зазвичай з заголовком". Домашня сторінка
+            зазвичай може бути розділена на розділи для ознайомлення, змісту і
+            контактної інформації.
+          </p>
+          <img src="./images/section.jpg" alt="Section example" />
+        </article>
+
+        <article id="nav-sumitem-2-2">
+          <header><h3>&lt;article&gt; елемент</h3></header>
+          <p>
+            Елемент &lt;article&gt;визначає незалежний, автономний вміст. Стаття
+            повинна мати сенс самостійно, і вона повинна мати можливість читати
+            його незалежно від іншої частини веб-сайту. Приклади того, де можна
+            використовувати елемент &lt;article&gt;:
+          </p>
+          <ul>
+            <li>Повідомлення на форумі</li>
+            <li>блозі</li>
+            <li>Газетна стаття</li>
+          </ul>
+          <img src="./images/article.jpg" alt="Article's example" />
+        </article>
+        <article id="nav-sumitem-2-3">
+          <header><h3>&lt;header&gt; елемент</h3></header>
+          <p>
+            Елемент &lt;header&gt;задає заголовок для документа або розділу.
+            Елемент &lt;header&gt;повинен використовуватися в якості контейнера
+            для вступного змісту.В одному документі може бути кілька елементів
+            &lt;header&gt;. У наступному прикладі визначається заголовок для
+            статті:
+          </p>
+          <img src="./images/header.jpg" alt="Article's example" />
+        </article>
+        <article id="nav-sumitem-2-4">
+          <header>
+            <h3>&lt;footer&gt; елемент</h3>
+          </header>
+          <p>
+            Елемент &lt;footer&gt;вказує нижній колонтитул для документа або
+            розділу. Нижній колонтитул зазвичай містить автора документа,
+            інформацію про авторське право, посилання на умови використання,
+            контактні дані і т.д. В одному документі може бути кілька елементів
+            &lt;footer&gt;.
+          </p>
+          <img src="./images/footer.jpg" alt="Article's example" />
+        </article>
+      </section>
+      <!-- IFRAME EXAMPLES -->
+      <section id="nav-main-item3">
+        <header>
+          <h2>Приклади IFRAME</h2>
+        </header>
+        <article id="nav-sumitem-3-1">
+          <header>
+            <h3>з посиланнями на .html файл</h3>
+          </header>
+          <iframe
+            src="../../homeworks/html_cv/index.html"
+            title="CV Kateryna Kuzma"
+            width="60%"
+            height="600"
+          >
+          </iframe>
+        </article>
+
+        <article id="nav-sumitem-3-2">
+          <header>
+            <h3>з посиланнями на відео</h3>
+          </header>
+          <iframe
+            width="650"
+            height="315"
+            src="https://www.youtube.com/embed/dEBVe8Ij7JU?si=ufelPKdNnaJsPz0J"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <h3>Posted by: Kateryna Kuzma</h3>
+      <p>
+        <a href="mailto:katushke2017!@gmail.com">katushke2017@gmail.com</a>
+      </p>
+    </footer>
+  </body>
+</html>
