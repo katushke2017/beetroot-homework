@@ -8,60 +8,56 @@
   </head>
   <body>
     <header>
-      <div></div>
-      <h1>HTML5 Семантичні елементи</h1>
+      <p class="site-class">HTML5 Семантичні елементи</p>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="../../index.html">HOME PAGE</a>
+          </li>
+          <li>
+            <a href="#nav-main-item1"
+              >Понятття семантичних елементів та підтримка їх браузерами</a
+            >
+          </li>
+          <li>
+            <a href="#nav-main-item2">Нові семантичні елементи в HTML5</a>
+            <ul>
+              <li>
+                <a href="#nav-sumitem-2-1">&lt;section&gt; елемент </a>
+              </li>
+              <li>
+                <a href="#nav-sumitem-2-2">&lt;article&gt; елемент </a>
+              </li>
+              <li>
+                <a href="#nav-sumitem-2-3">&lt;header&gt; елемент </a>
+              </li>
+              <li>
+                <a href="#nav-sumitem-2-4">&lt;footer&gt; елемент </a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#nav-main-item3">Приклади IFRAME</a>
+
+            <ul>
+              <li>
+                <a href="#nav-sumitem-3-1"> з посиланнями на .html файл </a>
+              </li>
+              <li>
+                <a href="#nav-sumitem-3-2"> з посиланнями на відео </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <nav>
-      <ol>
-        <li>
-          <a href="../../index.html">HOME PAGE</a>
-        </li>
-        <li>
-          <a href="#nav-main-item1"
-            >Понятття семантичних елементів та підтримка їх браузерами</a
-          >
-        </li>
-        <li>
-          <a href="#nav-main-item2">Нові семантичні елементи в HTML5</a>
-          <ul>
-            <li>
-              <a href="#nav-sumitem-2-1">&lt;section&gt; елемент </a>
-            </li>
-            <li>
-              <a href="#nav-sumitem-2-2">&lt;article&gt; елемент </a>
-            </li>
-            <li>
-              <a href="#nav-sumitem-2-3">&lt;header&gt; елемент </a>
-            </li>
-            <li>
-              <a href="#nav-sumitem-2-4">&lt;footer&gt; елемент </a>
-            </li>
-          </ul>
-        </li>
-
-        <li>
-          <a href="#nav-main-item3">Приклади IFRAME</a>
-
-          <ul>
-            <li>
-              <a href="#nav-sumitem-3-1"> з посиланнями на .html файл </a>
-            </li>
-            <li>
-              <a href="#nav-sumitem-3-2"> з посиланнями на відео </a>
-            </li>
-          </ul>
-        </li>
-      </ol>
-    </nav>
     <main>
       <section id="nav-main-item1">
-        <header>
-          <h2>Понятття семантичних елементів та підтримка їх браузерами</h2>
-        </header>
+        <h2>Понятття семантичних елементів та підтримка їх браузерами</h2>
         <article>
-          <header>
-            <h3>Понятття</h3>
-          </header>
+          <h3>Понятття</h3>
           <p>
             Семантичний елемент чітко описує його значення як для браузера, так
             і для розробника. Приклади не семантичних елементів: &lt;div&gt; і
@@ -71,9 +67,7 @@
           </p>
         </article>
         <article>
-          <header>
-            <h3>Підтримка браузерами</h3>
-          </header>
+          <h3>Підтримка браузерами</h3>
           <p>
             Семантичні елементи HTML5 підтримуються у всіх сучасних браузерах.
           </p>
@@ -90,14 +84,9 @@
         </article>
       </section>
       <section id="nav-main-item2">
-        <header>
-          <h2>Нові семантичні елементи в HTML5</h2>
-        </header>
-
+        <h2>Нові семантичні елементи в HTML5</h2>
         <article id="nav-sumitem-2-1">
-          <header>
-            <h3>&lt;section&gt; елемент</h3>
-          </header>
+          <h3>&lt;section&gt; елемент</h3>
           <p>
             Елемент &lt;section&gt;визначає розділ в документі. Згідно з
             документацією в3к'с HTML5: "розділ представляє собою тематичну
@@ -109,7 +98,7 @@
         </article>
 
         <article id="nav-sumitem-2-2">
-          <header><h3>&lt;article&gt; елемент</h3></header>
+          <h3>&lt;article&gt; елемент</h3>
           <p>
             Елемент &lt;article&gt;визначає незалежний, автономний вміст. Стаття
             повинна мати сенс самостійно, і вона повинна мати можливість читати
@@ -124,20 +113,19 @@
           <img src="./images/article.jpg" alt="Article's example" />
         </article>
         <article id="nav-sumitem-2-3">
-          <header><h3>&lt;header&gt; елемент</h3></header>
+          <h3>&lt;header&gt; елемент</h3>
           <p>
             Елемент &lt;header&gt;задає заголовок для документа або розділу.
             Елемент &lt;header&gt;повинен використовуватися в якості контейнера
-            для вступного змісту.В одному документі може бути кілька елементів
+            для вступного змісту. В одному документі може бути кілька елементів
             &lt;header&gt;. У наступному прикладі визначається заголовок для
             статті:
           </p>
           <img src="./images/header.jpg" alt="Article's example" />
         </article>
         <article id="nav-sumitem-2-4">
-          <header>
-            <h3>&lt;footer&gt; елемент</h3>
-          </header>
+          <h3>&lt;footer&gt; елемент</h3>
+
           <p>
             Елемент &lt;footer&gt;вказує нижній колонтитул для документа або
             розділу. Нижній колонтитул зазвичай містить автора документа,
@@ -150,13 +138,10 @@
       </section>
       <!-- IFRAME EXAMPLES -->
       <section id="nav-main-item3">
-        <header>
-          <h2>Приклади IFRAME</h2>
-        </header>
+        <h2>Приклади IFRAME</h2>
+
         <article id="nav-sumitem-3-1">
-          <header>
-            <h3>з посиланнями на .html файл</h3>
-          </header>
+          <h3>з посиланнями на .html файл</h3>
           <iframe
             src="../../homeworks/html_cv/index.html"
             title="CV Kateryna Kuzma"
@@ -167,9 +152,8 @@
         </article>
 
         <article id="nav-sumitem-3-2">
-          <header>
-            <h3>з посиланнями на відео</h3>
-          </header>
+          <h3>з посиланнями на відео</h3>
+
           <iframe
             width="650"
             height="315"
@@ -183,7 +167,7 @@
       </section>
     </main>
     <footer>
-      <h3>Posted by: Kateryna Kuzma</h3>
+      <p>Posted by: Kateryna Kuzma</p>
       <p>
         <a href="mailto:katushke2017!@gmail.com">katushke2017@gmail.com</a>
       </p>
