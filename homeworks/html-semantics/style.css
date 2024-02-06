@@ -1,10 +1,18 @@
-*{box-sizing: border-box;
-    padding:0;
-    margin:0;
+/* *Universal settings for all elements: font and spaces between lines are increased */
+*{
     font-size: 1.2rem;
     line-height:1.7rem;
     }
-    
+/* *Margin-top for content elements */
+header, footer, section, article{
+    margin-top: 20px;
+}
+
+/* *Header's paragraph */
+.header-paragraph{
+    font-weight: 900;
+    text-align: center;
+}
 img{
     width: 60%;
 }
@@ -12,23 +20,3 @@ img{
 p{
     text-align: justify;
 }
-
-header, footer{
-    margin-top: 50px;
-}
-
-.site-class{
-    font-weight: 900;
-    text-align: center;
-  
-}
-section, article{
-    padding-top: 20px;
-}
-ul{
-    padding-left: 30px;
-}
-li{
-    padding-left: 5px;
-}
-a{text-decoration: none;}

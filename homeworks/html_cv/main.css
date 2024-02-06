@@ -16,7 +16,7 @@
      padding: 5px 0px;
  }
 
- .h2main h2 {
+ .content-h2{
      margin-top: 20px;
      background-color: darkseagreen;
      border-radius: 10px;
@@ -54,3 +54,20 @@
     margin-block-start: 0;
     margin-block-end: 0;
  }
+ .div-block{
+    display: flex; 
+    margin-left: 10%
+ }
+ .div-main{
+    width: 60%; 
+    margin: auto
+ }
+ .div-block-sub{
+    /* display: inline-block; */
+    width: 45%
+ }
+ .div-sub-img{
+  
+    text-align: center;
+ }
+ 
