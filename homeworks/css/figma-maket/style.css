@@ -1,0 +1,75 @@
+/* *Universal settings */
+*{
+/* border: 1px solid black; */
+margin:0;
+padding: 0;
+}
+/* Navigation */
+.menu{
+    text-align: center;
+    font-size: 25px;
+}
+/* * wrapping block - class app */
+.app{
+    margin: 50px;
+}
+/* *blocks */
+.blocks{
+    width: 100px;
+}
+/* *blocks-item */
+.blocks-item{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+/* separate blocks items  */
+.blocks-red{
+    background-color: red;
+}
+.blocks-green{
+    background-color: green;
+}
+.blocks-blue{
+    background-color: blue;
+    
+}
+.blocks-grey{
+    background-color: lightgrey;
+}
+.blocks-circle{
+    border-radius: 50%;
+}
+/* *Text */
+
+/* wrapping  block for text */
+.text-block{
+    margin-top: 50px;
+    width: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* paragraphs styles */
+.text-base-size{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+   
+}
+.text-bigger-size{
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+/* italic */
+.text-italic{
+    font-style: italic;
+}
+/* bold */
+.text-bold{
+    font-weight: 700;
+}
+
+

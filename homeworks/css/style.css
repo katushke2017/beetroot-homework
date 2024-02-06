@@ -1,0 +1,10 @@
+/* *Universal settings for all elements: font and spaces between lines are increased */
+*{
+    font-size: 1.2rem;
+    line-height:1.7rem;
+    }
+/* Images settings*/
+.images{
+    width: 70%;
+    text-align: center;
+}

@@ -1,44 +1,55 @@
- /* div{
-            border: 1px solid black;
-        }   */
- h1 {
-     text-align: center;
+
+/* *Wrapping block - Class App*/
+.app{
+    width: 60%; 
+    margin: auto;
+    text-align: center;
+    line-height: 2rem; 
+}
+/* *Flex block */
+.blocks{
+    display: flex; 
+    margin-left: 5%;
+    margin-right: 5%;
+ }
+
+ /* Flex block item */
+ .blocks-item{
+    width: 45%;
+    
+ }
+ .blocks-image{
+    border-radius: 30%;
+ }
+ /* Flex block text */
+ .blocks-text {
+    color: forestgreen;
+    border: 2px solid grey;
+    border-radius: 10px;
+    padding: 5px 0px;
+  
+}
+ /* *Headers  */
+h1 {
      color: forestgreen;
      text-shadow: 2px 1px 2px grey;
  }
 
- .backgreen {
-     color: forestgreen;
-     border: 2px solid grey;
-     border-radius: 10px;
-     display: block;
-     text-align: center;
-     padding: 5px 0px;
- }
-
- .content-h2{
+/* Green Bloks */
+ .content-blocks{
      margin-top: 20px;
      background-color: darkseagreen;
      border-radius: 10px;
  }
 
- h2 {
-     line-height: 2rem;
-     margin-block-start: 0px;
-     text-align: center;
- }
-
  h3 {
      font-size: 1.5rem;
-     line-height: 2rem;
      margin-block-end: 0px;
      text-align: justify;
-     /* font-weight: 100; */
- }
+}
 
  h4 {
      font-size: 1.3rem;
-     line-height: 2rem;
      font-weight: 100;
      text-align: justify;
      margin-block-start: 0px;
@@ -54,20 +65,7 @@
     margin-block-start: 0;
     margin-block-end: 0;
  }
- .div-block{
-    display: flex; 
-    margin-left: 10%
- }
- .div-main{
-    width: 60%; 
-    margin: auto
- }
- .div-block-sub{
-    /* display: inline-block; */
-    width: 45%
- }
- .div-sub-img{
-  
-    text-align: center;
- }
- 
+
+ /* div{
+            border: 1px solid black;
+        }   */
