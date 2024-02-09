@@ -9,8 +9,8 @@
     font-weight: 900;
     transition: all .1s ease-in;
 }
-/* *wrapping block - class app */
-.app{
+body{
+    max-height: 100vh;
     border: 10px solid white;
     background-color: rgb(22, 20, 20);
     opacity: 0.9;
@@ -30,7 +30,7 @@ font-size: 2rem;
 }
 /* *list block */
 .list{
-    width: 40%;
+    max-width: 40%;
     margin: auto;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -60,18 +60,22 @@ label
 {   width:100%; 
     display: inline-block; 
 }
- span{
-    display: inline-block;
-    /* спроби вирівняти текст по вертикалі по центру,поки не були вдалими :( */
-    /* padding: 2px 0;
-    height: 2rem;
-    line-height: 2rem; */
-}
+ 
 /* changing of text-decoration when checkbox is checked */
 .list-checkbox:checked+span{
     text-decoration: line-through;
     color: grey;
 }
+span{
+    
+    display: inline-block;
+    
+    /* спроби вирівняти текст по вертикалі по центру,поки не були вдалими :( */
+    /* padding: 2px 0;
+    height: 2rem;
+    line-height: 2rem; */
+}
+
 /* changing background coclor for list item on click event */
 .list-item:active {
     background-color: lightcoral;
