@@ -1,0 +1,119 @@
+/* *Universal selector for all elements */
+*{
+    /* border: 2px solid black; */
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    font-weight: 900;
+    transition: all .1s ease-in;
+}
+/* *wrapping block - class app */
+.app{
+    border: 10px solid white;
+    background-color: rgb(22, 20, 20);
+    opacity: 0.9;
+    color: white;
+}
+/* *header block  */
+.header-block{
+    background-color: rgb(58, 53, 53);
+    text-align: center;
+}
+.red-text{
+    color: rgb(209, 73, 73);
+}
+/* header's first paragraph */
+.header-block p:first-child{
+font-size: 2rem;
+}
+/* *list block */
+.list{
+    width: 40%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+/* listitem */
+.list-item{
+    padding: 5px 3px;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+}
+/* background for all odd list-items */
+.list-item:nth-child(odd){
+background-color: rgb(104, 99, 99);
+}
+/* background for all even list-items */
+.list-item:nth-child(even){
+    background-color: rgb(43, 40, 40);
+    }
+/* hover for all list-items: background and borders top,bottom */
+.list-item:hover{
+        background-color: rgb(10, 10, 10);
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+}
+/*  transfere labels and spans to blocks */
+label
+{   width:100%; 
+    display: inline-block; 
+}
+ span{
+    display: inline-block;
+    /* спроби вирівняти текст по вертикалі по центру,поки не були вдалими :( */
+    /* padding: 2px 0;
+    height: 2rem;
+    line-height: 2rem; */
+}
+/* changing of text-decoration when checkbox is checked */
+.list-checkbox:checked+span{
+    text-decoration: line-through;
+    color: grey;
+}
+/* changing background coclor for list item on click event */
+.list-item:active {
+    background-color: lightcoral;
+    
+}
+.list-button{
+    margin-top: 50px;
+}
+/* button formating */
+.button{
+    padding: 25px;
+    width:100%; 
+    color: lightcoral;
+    background-color: rgb(58, 53, 53);
+}
+
+ /* adding content to span of each (pseudo-class :nth-child() list-item  with after pseudo-element */
+.list-item:nth-child(1) span::after{
+    content:  "  (for the next lessons about CSS)";
+} 
+.list-item:nth-child(2) span::after{
+    content:  "  (for more CSS manipulations)";
+}
+.list-item:nth-child(3) span::after{
+    content:  "  (because they are awesome)";
+}
+.list-item:nth-child(4) span::after{
+    content:  "  (hm... they always dissapear)";
+}
+.list-item:nth-child(5) span::after{
+    content:  "  (why not -:), they are in trend)";
+}
+.list-item:nth-child(6) span::after{
+    content:  "  (for my friend)";
+}
+/* font-sizing for added text to span with after pseudo-element*/
+.list-item span::after{
+    font-size: 12pt;
+    font-weight: 400;
+    
+ }
+ /* link text color */
+a{
+    color: white;
+}
