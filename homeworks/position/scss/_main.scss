@@ -1,0 +1,29 @@
+/* *Universal settings for all elements*/
+*{
+  // border: 1px solid green;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: black;
+  // width: 100vh;
+ 
+}
+.main{
+  padding-top: 100px;
+  width: 100%;
+}
+
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // background-color: black;
+  position: relative;
+  max-width: 700px;
+  height: 700px;
+  margin: 0 auto;
+
+}
