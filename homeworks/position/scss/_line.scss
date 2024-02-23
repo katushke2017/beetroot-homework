@@ -1,10 +1,10 @@
 .line{
   width: calc(100% - 50px);
-  position: absolute;
- 
   height: 3px;
   background-color: white;
   position: absolute;
+  // z-index: 1;
+  
 
   &--45{
     transform: rotate(45deg);

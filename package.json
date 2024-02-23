@@ -1,0 +1,11 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "beetroot-homework",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pug -w src/index.pug --out ."
+  },
+  "author": "",
+  "license": "ISC"
+}
