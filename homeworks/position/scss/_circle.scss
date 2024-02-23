@@ -3,8 +3,9 @@
   border: 12px solid #480E63;
   background-color: #290148;
   position: absolute;
-    z-index: 2;
-  transition: transform 0.5s ease-in-out;
+  z-index: 2;
+  transition: all 1s ease-in-out;
+
   
 
   &-main{
@@ -17,7 +18,7 @@
 
       &:active {
         & + .content {
-          transform: rotate(200deg);
+          transform: rotate(360deg);
         }
     }
   }
@@ -33,47 +34,74 @@
     height: 100%;
     border: 12px solid white;
     position: absolute;
-
-    &:hover{
-      transform: translate(50px);
-      
-    }
-    
   }
 
 
   
   &--top{
+    
     top: 0;
     left: calc(50% - 50px);
+    &:hover{
+      transform: translateY(50px);
+      
+    }
   }
   &--top-right{
     top: 82px;
     right: 88px;
+    &:hover{
+      transform: translate(-35px,45px);
+    
+    }
+    
+    
   }
   &--right{
     right: 0;
     top: calc(50% - 50px);
+    &:hover{
+      transform: translateX(-50px);
+    }
+    
   }
   &--bottom{
     bottom: 0;
     left: calc(50% - 50px);
+
+    &:hover{
+      transform: translateY(-50px);
+    }
+    
   }
   &--left{
     left: 0;
     top: calc(50% - 50px);
+    &:hover{
+      transform: translateX(50px);
+    }
+    
   }
   &--bottom-right{
     bottom: 82px;
     right: 88px;
+    &:hover{
+      transform: translate(-35px,-45px);
+    }
   }
   &--bottom-left{
     bottom: 82px;
     left: 88px;
+    &:hover{
+      transform: translate(35px,-45px);
+   }
   }
   &--top-left{
     top: 82px;
     left: 88px;
+    &:hover{
+      transform: translate(35px,45px);
+   }
   }
 
 }
