@@ -1,0 +1,16 @@
+  // *Rows
+.item{
+  &--two-columns{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 12px;
+  }
+  &--bottom{
+    text-align: center;
+  }
+  &--flex{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}

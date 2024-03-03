@@ -1,0 +1,14 @@
+.button{
+
+  background-color: var(--c-blue);
+  border: transparent;
+  border-radius: 5px;
+  height: 38px;
+
+  &--big{
+    width: 100%;
+  }
+  &--small{
+    width: 40%;
+  }
+}

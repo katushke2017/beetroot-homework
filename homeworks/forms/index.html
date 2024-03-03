@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <!-- *Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- *Styles -->
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Icons -->
+    <svg
+      aria-hidden="true"
+      style="position: absolute; width: 0; height: 0; overflow: hidden"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+      <defs>
+        <symbol id="icon-photo-camera" viewBox="0 0 32 32">
+          <path
+            d="M8.272 4.8l2.928-3.2h9.6l2.928 3.2h5.072c1.76 0 3.2 1.44 3.2 3.2v19.2c0 1.76-1.44 3.2-3.2 3.2h-25.6c-1.76 0-3.2-1.44-3.2-3.2v-19.2c0-1.76 1.44-3.2 3.2-3.2h5.072zM8 17.6c0 4.416 3.584 8 8 8s8-3.584 8-8c0-4.416-3.584-8-8-8s-8 3.584-8 8zM16 22.72c2.828 0 5.12-2.292 5.12-5.12s-2.292-5.12-5.12-5.12c-2.828 0-5.12 2.292-5.12 5.12s2.292 5.12 5.12 5.12z"
+          ></path>
+        </symbol>
+        <symbol id="icon-Trash" viewBox="0 0 32 32">
+          <path
+            d="M5.333 28.445c0 1.955 1.6 3.555 3.556 3.555h14.222c1.955 0 3.555-1.6 3.555-3.555v-21.333h-21.333v21.333zM28.445 1.778h-6.222l-1.778-1.778h-8.889l-1.778 1.778h-6.222v3.556h24.889v-3.556z"
+          ></path>
+        </symbol>
+      </defs>
+    </svg>
+    <div class="app">
+      <div class="wrapper">
+        <!-- *Wrapper for forms with grey color -->
+        <div class="wrapper-forms roboto roboto-regular">
+          <!-- *Grid with two columns -->
+          <div class="grid">
+            <form action="get">
+              <!-- *The first form with space between rows  -->
+              <div class="form-item form-item--grid">
+                <div class="roboto-bold roboto-big">Create an Account</div>
+                <!-- *Row with two columns -->
+                <div class="item item--two-columns">
+                  <div>
+                    <label>
+                      <div class="label">First name</div>
+                      <input class="input" type="text" required />
+                      <div class="error">*This field is requred</div>
+                    </label>
+                  </div>
+
+                  <div>
+                    <label>
+                      <div class="label">Last Name</div>
+                      <input class="input" type="text" id="lastName" required />
+                      <div class="error">*This field is requred</div>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <label>
+                    <div class="label">E-mail</div>
+                    <input class="input" type="email" id="email" required />
+                    <div class="error">*This field is requred</div>
+                  </label>
+                  <div class="roboto-small">
+                    We'll never share your email with anyone else.
+                  </div>
+                </div>
+                <div class="item">
+                  <input
+                    class="input--radio"
+                    type="radio"
+                    name="gender"
+                    id="male"
+                    value="Male"
+                  /><label class="label--radio" for="male">Male</label>
+                  <input
+                    class="input--radio"
+                    type="radio"
+                    name="gender"
+                    id="female"
+                    value="Female"
+                    checked
+                  /><label class="label--radio" for="female">Female</label>
+                </div>
+
+                <div class="item item--two-columns">
+                  <div>
+                    <label>
+                      <div class="label">Country</div>
+                      <select class="select" name="country" required>
+                        <option class="select--data-default" value="" selected>
+                          Select
+                        </option>
+                        <option value="Ukraine">Ukraine</option>
+                        <option value="USA">USA</option>
+                        <option value="Slovak Republic">Slovak Republic</option>
+                      </select>
+                      <div class="error">*This field is requred</div>
+                    </label>
+                  </div>
+
+                  <div>
+                    <label>
+                      <div class="label">City</div>
+                      <input class="input" type="text" required />
+                      <div class="error">*This field is requred</div>
+                    </label>
+                  </div>
+                </div>
+                <div class="item">
+                  <button
+                    class="button button--big roboto--white"
+                    type="submit"
+                  >
+                    <span>Sign Up</span>
+                  </button>
+                </div>
+                <div class="item">
+                  <div class="item roboto-small roboto-small--center">
+                    By clicking the 'Sign Up' button, you confirm that you
+                    accept our
+                    <span class="roboto-small--blue">Terms of Use</span> and
+                    <span class="roboto-small--blue">Privacy Policy</span>
+                  </div>
+                </div>
+                <div class="item">
+                  <hr class="line" />
+                </div>
+                <div class="item item--bottom">
+                  <span>Have an account?</span>
+                  <a href="#" class="link roboto-bold">Log In</a>
+                </div>
+              </div>
+            </form>
+            <form action="get">
+              <!--* Second  form - right-->
+              <div class="form-item form-item--grid">
+                <div class="roboto-bold roboto-big">Profile</div>
+                <!-- Flex block for imaage and icons  -->
+                <div class="item--flex">
+                  <div class="image">
+                    <img src="./assets/photo.jpg" alt="" />
+                  </div>
+                  <!-- *Block for file-input, message and icons-->
+                  <div class="mess-limit">
+                    <!-- block for input and all icons -->
+                    <div class="file-wrapper">
+                      <!-- outside wrapper for file input and photo icon -->
+                      <div class="file-block">
+                        <label>
+                          <input type="input" class="input input--file" />
+                        </label>
+                        <div class="icon icon-wrapper">
+                          <svg class="icon icon-photo-camera">
+                            <use xlink:href="#icon-photo-camera"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="icon icon-block">
+                        <svg class="icon icon-Trash">
+                          <use xlink:href="#icon-Trash"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="roboto roboto-small">
+                      Up to 1 MB (300x300 px)
+                    </div>
+                  </div>
+                </div>
+                <div class="item item--two-columns">
+                  <div>
+                    <label>
+                      <div class="label">Name</div>
+                      <input class="input" type="text" required />
+                      <div class="error">*This field is requred</div>
+                    </label>
+                  </div>
+
+                  <div>
+                    <label>
+                      <div class="label">E-mail</div>
+                      <input class="input" type="email" required />
+                      <div class="error">*This field is requred</div>
+                    </label>
+                  </div>
+                </div>
+                <div class="item item--two-columns">
+                  <div>
+                    <label>
+                      <div class="label">Country</div>
+                      <select class="select" name="country" required>
+                        <option class="select--data-default" value="" selected>
+                          Select
+                        </option>
+                        <option value="Ukraine">Ukraine</option>
+                        <option value="USA">USA</option>
+                        <option value="Slovak Republic">Slovak Republic</option>
+                      </select>
+                      <div class="error">*This field is requred</div>
+                    </label>
+                  </div>
+
+                  <div>
+                    <label>
+                      <div class="label">City</div>
+                      <input class="input" type="text" required />
+                      <div class="error">*This field is requred</div>
+                    </label>
+                  </div>
+                </div>
+                <div class="item item--two-columns">
+                  <div>
+                    <label>
+                      <div class="label">Zip Code</div>
+                      <input
+                        class="input"
+                        type="text"
+                        name="zipCode"
+                        required
+                      />
+                      <div class="error">*This field is requred</div>
+                    </label>
+                  </div>
+
+                  <div>
+                    <label>
+                      <div class="label">Phone Number</div>
+                      <input
+                        class="input"
+                        type="number"
+                        name="phoneNumber"
+                        required
+                      />
+                      <div class="error">*This field is requred</div>
+                    </label>
+                  </div>
+                </div>
+                <div class="item">
+                  <button
+                    class="button button--small roboto--white"
+                    type="submit"
+                  >
+                    <span>Update</span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <nav>
+            <a href="../../index.html" class="link link--home">HOME PAGE</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

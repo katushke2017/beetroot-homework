@@ -1,0 +1,14 @@
+// * Form with space between rows 
+.form-item{
+  background-color: var(--c-white);
+  padding-top: 35px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 15px;
+  row-gap: 15px;
+  min-height: 590px;
+
+  &--grid{
+    display: grid;
+  }
+}

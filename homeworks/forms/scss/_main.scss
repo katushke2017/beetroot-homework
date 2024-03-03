@@ -1,0 +1,141 @@
+@import './variables';
+/* *Universal settings for all elements*/
+*{
+  // border: 1px solid green;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+// *Icons
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: var(--c-dark-grey);
+    &-block{
+      height: 30px;
+      width: 30px;
+      background-color: transparent;
+      border: 1px solid var(--c-light-grey);
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &-wrapper{
+      margin-right: 7px;
+    }
+}
+// Profile image
+.image{
+  max-width: 80px;
+  max-height: 80px;
+}
+
+// *Wrapper for forms with grey color
+.wrapper{
+  &-forms{
+    background-color: var(--c-light-white);
+    padding: 55px 135px;
+    max-width: 1430px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+// *Grid
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+
+}
+// error message for required inputs
+.error{
+  color: var(--c-red);
+  font-size: 12px;
+  height: 12px;
+  line-height: 1;
+  opacity: 0;
+}
+// input elements
+.input{
+  width: 100%;
+  min-height: 38px;
+  border-radius: 5px;
+  border: 1px solid var(--c-light-grey);
+  &--radio{
+    height: 20px;
+    width: 20px;
+  }
+  &--file{
+    max-width: 116px;
+    min-height: 30px;
+    border: transparent;
+  }
+}
+.input:invalid{
+  border: 1px solid var(--c-blue);
+}
+.input:invalid +.error{
+  opacity: 1;
+}
+.select:invalid +.error{
+  opacity: 1;
+}
+
+.line{
+  border: 1px solid var(--c-light-grey);
+}
+
+.label{
+  padding-bottom: 7px;
+  &--radio{
+    margin-left: 8px;
+    margin-right: 20px;
+  }
+}
+
+.select{
+  width: 100%;
+  min-height: 38px;
+  border-radius: 5px;
+  border: 1px solid var(--c-light-grey);
+  
+    &--data-default{
+  display: none;
+  }
+
+}
+.link{
+  text-decoration: none;
+  color: var(--c-blue);
+  padding-left: 20px;
+  &--home{
+    display: inline-block;
+    padding-top: 20px;
+  }
+}
+// Block for all: file-input, message and icons
+.mess-limit{
+  margin-left: 10px;
+
+}
+.file
+{
+  // block for input and all icons
+  &-block{
+    border: 1px solid var(--c-light-grey);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+// outside wrapper for file input and photo icon 
+  &-wrapper{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 8px;
+    align-items: center;
+  }
+}

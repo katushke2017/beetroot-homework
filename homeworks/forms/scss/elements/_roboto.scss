@@ -1,0 +1,41 @@
+// Font styles
+.roboto {
+  font-style: normal;
+  font-family: var(--f-base);
+  letter-spacing:  -0.2px;
+  font-size: 15px;
+  line-height: 22px;
+
+  &-light {
+    font-weight: 300;
+  }
+
+  &-regular {
+    font-weight: 400;
+  }
+  &-bold{
+    font-weight: 500;
+  }
+  &-big{
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  &--white{
+    color: var(--c-white);
+  }
+  &-small{
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+    color: var(--c-dark-grey);
+    &--center{
+      text-align: center;
+    }
+    &--blue{
+      color: var(--c-blue);
+    }
+  }
+
+
+}
