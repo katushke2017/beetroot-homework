@@ -84,7 +84,9 @@
 .select:invalid +.error{
   opacity: 1;
 }
-
+.select:invalid{
+  border: 1px solid var(--c-blue);
+}
 .line{
   border: 1px solid var(--c-light-grey);
 }
