@@ -43,7 +43,7 @@
         <div class="wrapper-forms roboto roboto-regular">
           <!-- *Grid with two columns -->
           <div class="grid">
-            <form action="get">
+            <form method="get">
               <!-- *The first form with space between rows  -->
               <div class="form-item form-item--grid">
                 <div class="roboto-bold roboto-big">Create an Account</div>
@@ -52,7 +52,12 @@
                   <div>
                     <label>
                       <div class="label">First name</div>
-                      <input class="input" type="text" required />
+                      <input
+                        class="input"
+                        type="text"
+                        name="firstName"
+                        required
+                      />
                       <div class="error">*This field is requred</div>
                     </label>
                   </div>
@@ -60,7 +65,13 @@
                   <div>
                     <label>
                       <div class="label">Last Name</div>
-                      <input class="input" type="text" id="lastName" required />
+                      <input
+                        class="input"
+                        type="text"
+                        id="lastName"
+                        name="lastName"
+                        required
+                      />
                       <div class="error">*This field is requred</div>
                     </label>
                   </div>
@@ -113,7 +124,7 @@
                   <div>
                     <label>
                       <div class="label">City</div>
-                      <input class="input" type="text" required />
+                      <input class="input" type="text" name="city" required />
                       <div class="error">*This field is requred</div>
                     </label>
                   </div>
@@ -143,7 +154,7 @@
                 </div>
               </div>
             </form>
-            <form action="get">
+            <form method="get">
               <!--* Second  form - right-->
               <div class="form-item form-item--grid">
                 <div class="roboto-bold roboto-big">Profile</div>
@@ -159,13 +170,17 @@
                       <!-- outside wrapper for file input and photo icon -->
                       <div class="file-block">
                         <label>
-                          <input type="input" class="input input--file" />
+                          <input
+                            type="file"
+                            class="input input--file"
+                            name="file"
+                          />
                         </label>
-                        <div class="icon icon-wrapper">
-                          <svg class="icon icon-photo-camera">
-                            <use xlink:href="#icon-photo-camera"></use>
-                          </svg>
-                        </div>
+                        <!-- <div class="icon icon-wrapper"> -->
+                        <svg class="icon icon-photo-camera">
+                          <use xlink:href="#icon-photo-camera"></use>
+                        </svg>
+                        <!-- </div> -->
                       </div>
                       <div class="icon icon-block">
                         <svg class="icon icon-Trash">
@@ -182,7 +197,7 @@
                   <div>
                     <label>
                       <div class="label">Name</div>
-                      <input class="input" type="text" required />
+                      <input class="input" type="text" name="name" required />
                       <div class="error">*This field is requred</div>
                     </label>
                   </div>
@@ -190,7 +205,7 @@
                   <div>
                     <label>
                       <div class="label">E-mail</div>
-                      <input class="input" type="email" required />
+                      <input class="input" type="email" name="email" required />
                       <div class="error">*This field is requred</div>
                     </label>
                   </div>

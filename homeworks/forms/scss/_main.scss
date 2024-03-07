@@ -1,6 +1,6 @@
 @import './variables';
 /* *Universal settings for all elements*/
-*{
+* {
   // border: 1px solid green;
   box-sizing: border-box;
   padding: 0;
@@ -14,29 +14,34 @@
   stroke-width: 0;
   stroke: currentColor;
   fill: var(--c-dark-grey);
-    &-block{
-      height: 30px;
-      width: 30px;
-      background-color: transparent;
-      border: 1px solid var(--c-light-grey);
-      border-radius: 5px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    &-wrapper{
-      margin-right: 7px;
-    }
+  &-block {
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    border: 1px solid var(--c-light-grey);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-photo-camera {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
+  &-wrapper {
+    margin-right: 7px;
+  }
 }
 // Profile image
-.image{
+.image {
   max-width: 80px;
   max-height: 80px;
 }
 
 // *Wrapper for forms with grey color
-.wrapper{
-  &-forms{
+.wrapper {
+  &-forms {
     background-color: var(--c-light-white);
     padding: 55px 135px;
     max-width: 1430px;
@@ -45,99 +50,102 @@
   }
 }
 // *Grid
-.grid{
+.grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-
 }
 // error message for required inputs
-.error{
+.error {
   color: var(--c-red);
+  padding-top: 5px;
+  padding-bottom: 10px;
   font-size: 12px;
   height: 12px;
   line-height: 1;
   opacity: 0;
 }
 // input elements
-.input{
+.input {
   width: 100%;
   min-height: 38px;
   border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
   border: 1px solid var(--c-light-grey);
-  &--radio{
+  &--radio {
     height: 20px;
     width: 20px;
   }
-  &--file{
-    max-width: 116px;
-    min-height: 30px;
-    border: transparent;
+  &--file {
+    opacity: 0;
   }
 }
-.input:invalid{
+.input:invalid {
   border: 1px solid var(--c-blue);
 }
-.input:invalid +.error{
+.input:invalid + .error {
   opacity: 1;
 }
-.select:invalid +.error{
+.select:invalid + .error {
   opacity: 1;
 }
-.select:invalid{
+.select:invalid {
   border: 1px solid var(--c-blue);
 }
-.line{
+.line {
   border: 1px solid var(--c-light-grey);
 }
 
-.label{
+.label {
   padding-bottom: 7px;
-  &--radio{
+  &--radio {
     margin-left: 8px;
     margin-right: 20px;
   }
 }
 
-.select{
+.select {
   width: 100%;
   min-height: 38px;
   border-radius: 5px;
   border: 1px solid var(--c-light-grey);
-  
-    &--data-default{
-  display: none;
-  }
 
+  &--data-default {
+    display: none;
+  }
 }
-.link{
+.link {
   text-decoration: none;
   color: var(--c-blue);
   padding-left: 20px;
-  &--home{
+  &--home {
     display: inline-block;
     padding-top: 20px;
   }
 }
 // Block for all: file-input, message and icons
-.mess-limit{
+.mess-limit {
   margin-left: 10px;
-
+  width: 35%;
 }
-.file
-{
+.file {
   // block for input and all icons
-  &-block{
+  &-block {
     border: 1px solid var(--c-light-grey);
+    justify-content: flex-end;
     border-radius: 5px;
-    display: flex;
     align-items: center;
+    display: flex;
+    width: 100%;
+    position: relative;
   }
-// outside wrapper for file input and photo icon 
-  &-wrapper{
-    display: flex;
-    gap: 10px;
-    margin-bottom: 8px;
+  // outside wrapper for file input and photo icon
+  &-wrapper {
     align-items: center;
+    margin-bottom: 8px;
+    display: flex;
+    width: 100%;
+    gap: 10px;
   }
 }
