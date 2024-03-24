@@ -16,34 +16,41 @@ const GB = 1024;
 const fileSize = 820;
 const sizeGb = +prompt('Введіть обсяг флешки в Гб', 15);
 // перевірка чи введене значення існує, не 0 та додатнє
-if (sizeGb && !(isNaN(sizeGb)) && (sizeGb > 0)) {
-  const countFiles = sizeGb * GB / fileSize;
-  alert(`на флешку поміщається ${Math.floor(countFiles)} файлів розміром 820Мб`);
-}
-else {
+if (sizeGb && !isNaN(sizeGb) && sizeGb > 0) {
+  const countFiles = (sizeGb * GB) / fileSize;
+  alert(
+    `на флешку поміщається ${Math.floor(countFiles)} файлів розміром 820Мб`
+  );
+} else {
   alert('Некоретно введене значення, конвертація неможлива!!!');
 }
 
-
 // Користувач вводить суму грошей в гаманці і ціну однієї шоколадки. Програма виводить скільки шоколадок може купити користувач і скільки здачі у нього залишиться.
-let flag_amount, flag_price = false;
+let flagAmount,
+  flagPice = false;
+
 const amount = +prompt('Скільки маєте грошей, в гривні', 100);
-if (amount && !(isNaN(amount)) && (amount > 0)) {
-  flag_amount = true;
-}
-else {
-  alert('Некоретно введене значення, !!!');
-}
-const price = +prompt('Скільки коштує одна шоколадка', 27);
-if ((price) && !(isNaN(price)) && (price > 0)) {
-  flag_price = true;
-}
-else {
+
+if (amount && !isNaN(amount) && amount > 0) {
+  flagAmount = true;
+} else {
   alert('Некоретно введене значення, !!!');
 }
 
-if (flag_amount && flag_price) {
-  alert(`можна купити ${Math.floor(amount / price)} шоколадки та будеш мати решту: ${Math.floor(amount % price)}`);
+const price = +prompt('Скільки коштує одна шоколадка', 27);
+
+if (price && !isNaN(price) && price > 0) {
+  flagPrice = true;
+} else {
+  alert('Некоретно введене значення, !!!');
+}
+
+if (flagAmount && flagPrice) {
+  alert(
+    `можна купити ${Math.floor(
+      amount / price
+    )} шоколадки та будеш мати решту: ${Math.floor(amount % price)}`
+  );
 }
 
 // Запитай у користувача тризначне число і виведи його задом наперед. Для вирішення завдання тобі знадобиться оператор % (залишок від ділення).
@@ -56,17 +63,21 @@ if (count && !isNaN(count)) {
   const second = Math.floor(two % 10);
   const first = Math.floor(two / 10);
   const result = third * 100 + second * 10 + first;
+
   console.log(`Резульат: ${result}`);
 } else {
   alert('Некоретно введене значення, !!!');
 }
+
 // Користувач вводить суму вкладу в банк на 2 місяці, з процентною ставкою депозиту 5% річних. Вивести суму нарахованих відсотків.
 const sum = +prompt('введіть суму вкладу, в гривні', 15000);
-if (sum && !(isNaN(sum)) && (sum > 0)) {
-  const procentsMonth = sum * 0.05 / 12;
+
+if (sum && !isNaN(sum) && sum > 0) {
+  const procentsMonth = (sum * 0.05) / 12;
   const procents = procentsMonth * 2;
+
   console.log(procents);
   alert('Ваші відстоки за два місцяці - ' + procents.toFixed(2) + 'грн.');
-}
-else
+} else {
   alert('Некоретно введене значення, !!!');
+}
