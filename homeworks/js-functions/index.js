@@ -50,7 +50,7 @@ checkPositive(three);
 console.log(number(one, two, three));
 
 //площа чотирикутника чи квадрата
-console.log('\nTask 5. /*********площа чотирикутника чи квадрата/');
+console.log('\nTask 5. /*********площа прямокутника чи квадрата/');
 
 const flag = confirm('обчислення площі: ok - квадрата; cansel - прямокутника ');
 const mas = [];
