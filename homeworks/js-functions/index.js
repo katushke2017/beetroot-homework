@@ -64,6 +64,8 @@ mas.push(firstLine);
 if (flag === false) {
   secondLine = +prompt('Введіть довжину другої сторони', 8);
   checkPositive(secondLine);
+
+  mas.push(secondLine);
 }
 
 console.log('площа чотирикутника', area(mas));
