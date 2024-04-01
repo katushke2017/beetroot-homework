@@ -18,4 +18,6 @@ if (DOMButton) {
       activeClick = 0;
     }
   });
+} else {
+  throw new Error("Dom element doesn't exists");
 }
